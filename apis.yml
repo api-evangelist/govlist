@@ -1,19 +1,51 @@
 aid: govlist
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/govlist.png
 name: Govlist
-description: Govlist is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Govlist, Inc. (which operated as ProcureNow) was a San Francisco-based govtech startup
+  providing a multi-tenant SaaS platform for government procurement and contract management. Its
+  Government Procurement Automation Cloud helped local and state agencies build, source, and evaluate
+  RFPs and bids, and helped suppliers read, understand, and respond to complex public solicitations.
+  The company, backed by 500 Global and Civstart, was acquired by OpenGov in 2021 (announced June 2021),
+  where the product now lives as OpenGov Procurement. Govlist has no independent developer surface, API,
+  or portal; its original domain (thegovlist.com) no longer resolves. This profile is preserved as a
+  historical lead surfaced from the 500 Global portfolio.
 url: https://raw.githubusercontent.com/api-evangelist/govlist/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - 500-global
+- civstart
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-former-name: ProcureNow
+x-acquired-by: opengov
+x-acquired-year: '2021'
+x-successor-url: https://opengov.com/products/procurement/
+x-website-status: offline
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- GovTech
+- Government
+- Procurement
+- Public Sector
+- RFP
+- Contract Management
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +55,10 @@ maintainers:
 common:
 - type: Website
   url: https://thegovlist.com
+- type: Crunchbase
+  url: https://www.crunchbase.com/organization/govlist
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
