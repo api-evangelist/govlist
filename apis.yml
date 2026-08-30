@@ -64,6 +64,11 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/opengov/
+  name: OpenGov
+  x-relationship: acquired
+  x-evidence: "The company, backed by 500 Global and Civstart, was acquired by OpenGov in 2021 (announced June 2021), where the product now lives as OpenGov Procurement."
 - type: Website
   url: https://thegovlist.com
 - type: Crunchbase
